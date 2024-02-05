@@ -20,6 +20,10 @@ h2 {
     color: black;
 }
 
+h3{
+    text-align: center;
+}
+
 /*
 ul {
     /* configuracion para que las opciones esten a la derecha y sin ningun estilo de lista 
@@ -46,6 +50,7 @@ section {
     text-align: center;
 }
 
+
 img {
     /* controlo el tamaño de las imagenes */
     width: 50%;
@@ -60,13 +65,6 @@ footer {
     height: 20px;
     box-sizing: border-box;
 }
-
-/*
-@media screen and (min-width:992px){
-    .nav-item {
-    line-height:80px;
-    }
-  }*/
 
 /* ----ESTILOS DE LA PAGINA TURNOS---- */
 .imgTurnos {
@@ -91,43 +89,53 @@ figcaption {
     font-size: small;
 }
 
+/*aplicamos flex a la seccion de turnos*/
+.secTurnos{
+    display: flex;  /*elementos flexibles, en este caso las cards*/
+    flex-direction: row; /*se van a alinear en filas*/
+    justify-content: center; /*el contenido va a estar en el centro*/
+    flex-wrap: wrap; /*wrap para que si se pasan de la pagina, las cards hagan salto de linea*/
+}
+
 
 /* ----ESTILOS DE LA PAGINA CONTACTOS---- */
 form {
+    display: flex;  /*el form es flexible al igual q sus hijos*/
+    flex-direction: column; /*se alinean los elementos en columnas*/
+
     /* centrar el formulario en la página */
-    text-align: center;
     margin: 0 auto;
-    width: 700px;
+    width: 50%;
 
     /* diseños en el formulario, borde que aparece a su alrededor y con color */
     padding: 1em;
     border: 1px solid #645050;
     border-radius: 1em;
     
-    /* dejar espacio con la parte de arriba*/
-    margin-top: 50px;
 }
 
 label {
     /* tamaño y alineación uniforme */
-    display: inline-block;
+    margin-bottom: 5px;
     width: 90px;
-    text-align: right;
 }
 
 /* aplicamos estilos a 2 etiquetas a la vez*/
 input, textarea {
-  /* establecemos el tipo de letra que van a tener los input y el textarea */
-  font: 1em sans-serif;
+    /* establecemos el tipo de letra que van a tener los input y el textarea */
+    font: 1em sans-serif;
 
-  /* tamaño del campo de texto */
-  width: 300px;
-  box-sizing: border-box;
+    /* tamaño del campo de texto */
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
 }
 
 
 /* ----ESTILOS DE LA PAGINA OPINIONES ---- */
 .figureOpiniones {
+    display: flex; /*elemento flexible, al igual q sus hijos*/
+    
     /* controles de los figure, para que esten separados uno del otro, para q tengan margen del borde asi queda
     mas lindo, le ponemos color al borde para que se diferencie una opinion de la otra */
     margin: 10px;
@@ -136,8 +144,47 @@ input, textarea {
     text-align: center;
     border: 1px solid #645050;
     border-radius: 1em;
+    flex: 200px;
 }
 
 .imgOpiniones {
-    width: 15%;
+    width: 45%;
+    height: 20%;
+    padding-bottom: 5px;
+    
+}
+
+#secOpiniones{
+    display: flex;  /*la seccion va a ser flexible*/
+    flex-direction: row;
+}
+
+/* ---- ESTILOS DE LA PAGINA NOSOTROS ----*/
+#secNosotros{
+    display: flex;
+    flex-direction: row;
+}
+
+/* ---- MEDIA QUERYS ---- */
+
+/* diseño para dispositivos moviles */
+@media screen and (max-width: 480px) {
+
+    /*en dispositivos celulares el logo de medicina va a desaparecer, dejando solo las opciones del nav */
+    #logoMedicina{ 
+        display: none;
+    }
+
+    /*en dispositivos celulares el texto de las cards desaparece, en la pagina turnos*/
+    .figTurnos{
+        display: none;
+    }
+
+    /*en dispositivos celulares hacemos que las opiniones se muestren una abajo de la otra, pagina opiniones*/
+    #secOpiniones{
+        flex-wrap: wrap; 
+
+    }
+
+   
 }
