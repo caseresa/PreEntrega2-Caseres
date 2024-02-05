@@ -2,12 +2,14 @@
 body{
     /* fuente de la pagina */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center; 
 }
 
 header {
     /* aplica borde a mi header con margen */
     border: #000000 solid;
     margin: 5px;
+    text-align: center;
 }
 
 h2 {
@@ -18,22 +20,26 @@ h2 {
     color: black;
 }
 
+/*
 ul {
-    /* configuracion para que las opciones esten a la derecha y sin ningun estilo de lista */
+    /* configuracion para que las opciones esten a la derecha y sin ningun estilo de lista 
     list-style-type: none;
     text-align: right;
-}
+}*/
 
+/*
 li {
-    /* configuracion para que las opciones esten al lado de la otra */
+    /* configuracion para que las opciones esten al lado de la otra 
     display: inline;
     margin-right: 25px;
-}
+}*/
 
+/*
 a{
-    /* mis opciones aparecen en negro*/
+    /* mis opciones aparecen en negro
     color: #000000;
-}
+}*/
+
 
 section {
     /* todo lo que esté dentro de mi section se centra */
@@ -45,15 +51,22 @@ img {
     width: 50%;
 }
 
+
 footer {
     /* con esta configuracion ponemos el footer al pie de la pagina */
     text-align: center;
-    position: absolute;
     bottom: 0;
     width: 99%;
-    height: 40px;
+    height: 20px;
+    box-sizing: border-box;
 }
 
+/*
+@media screen and (min-width:992px){
+    .nav-item {
+    line-height:80px;
+    }
+  }*/
 
 /* ----ESTILOS DE LA PAGINA TURNOS---- */
 .imgTurnos {
