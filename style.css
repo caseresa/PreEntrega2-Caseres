@@ -1,27 +1,27 @@
 /* ----- ESTILOS DE INDEX Y GENERALES ----- */
-body{
-    /* fuente de la pagina */
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center; 
+body {
+  /* fuente de la pagina */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
 }
 
 header {
-    /* aplica borde a mi header con margen */
-    border: #000000 solid;
-    margin: 5px;
-    text-align: center;
+  /* aplica borde a mi header con margen */
+  border: #000000 solid;
+  margin: 5px;
+  text-align: center;
 }
 
 h2 {
-    /* alineo mi h2 con las opciones de navegacion */
-    position: absolute;
-    top: -3px;
-    padding-left: 80px;
-    color: black;
+  /* alineo mi h2 con las opciones de navegacion */
+  position: absolute;
+  top: -3px;
+  padding-left: 80px;
+  color: black;
 }
 
-h3{
-    text-align: center;
+h3 {
+  text-align: center;
 }
 
 /*
@@ -44,147 +44,186 @@ a{
     color: #000000;
 }*/
 
-
 section {
-    /* todo lo que esté dentro de mi section se centra */
-    text-align: center;
+  /* todo lo que esté dentro de mi section se centra */
+  text-align: center;
 }
-
 
 img {
-    /* controlo el tamaño de las imagenes */
-    width: 50%;
+  /* controlo el tamaño de las imagenes */
+  width: 50%;
 }
-
 
 footer {
-    /* con esta configuracion ponemos el footer al pie de la pagina */
-    text-align: center;
-    bottom: 0;
-    width: 99%;
-    height: 20px;
-    box-sizing: border-box;
+  /* con esta configuracion ponemos el footer al pie de la pagina */
+  text-align: center;
+  bottom: 0;
+  width: 99%;
+  height: 20px;
+  box-sizing: border-box;
 }
+
+nav button {
+  margin: 10px;
+  border-radius: 20%;
+  background-color: black;
+}
+
+a:hover {
+  color: aqua;
+}
+
+.jumbotron {
+  background-image: url("./img/imagenFondo.png");
+  background-size: cover;
+  color: black;
+  text-align: center;
+  padding: 150px 0;
+  margin-bottom: 50px;
+}
+
 
 /* ----ESTILOS DE LA PAGINA TURNOS---- */
 .imgTurnos {
-    /* controlamos el tamaño de las imagenes de los turnos */
-    width: 80%;
+  /* controlamos el tamaño de las imagenes de los turnos */
+  width: 80%;
 }
 
 .figureTurnos {
-    /* configuracion para que los figure esten uno al lado del otro, con color de fondo, bordes, texto alineado,
+  /* configuracion para que los figure esten uno al lado del otro, con color de fondo, bordes, texto alineado,
     un margen, etc. */
-    display: inline-block;
-    margin: 10px;
-    border: 1px solid #ccc;
-    padding: 5px;
-    background-color: #f8f8f8;
-    border-radius: 5px;
-    text-align: center;
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  text-align: center;
 }
 
 figcaption {
-    /* modificamos el tamaño del texto que acompaña las imagenes a pequeño */
-    font-size: small;
+  /* modificamos el tamaño del texto que acompaña las imagenes a pequeño */
+  font-size: small;
 }
 
 /*aplicamos flex a la seccion de turnos*/
-.secTurnos{
-    display: flex;  /*elementos flexibles, en este caso las cards*/
-    flex-direction: row; /*se van a alinear en filas*/
-    justify-content: center; /*el contenido va a estar en el centro*/
-    flex-wrap: wrap; /*wrap para que si se pasan de la pagina, las cards hagan salto de linea*/
+.secTurnos {
+  display: flex;
+  /*elementos flexibles, en este caso las cards*/
+  flex-direction: row;
+  /*se van a alinear en filas*/
+  justify-content: center;
+  /*el contenido va a estar en el centro*/
+  flex-wrap: wrap;
+  /*wrap para que si se pasan de la pagina, las cards hagan salto de linea*/
 }
-
 
 /* ----ESTILOS DE LA PAGINA CONTACTOS---- */
 form {
-    display: flex;  /*el form es flexible al igual q sus hijos*/
-    flex-direction: column; /*se alinean los elementos en columnas*/
+  display: flex;
+  /*el form es flexible al igual q sus hijos*/
+  flex-direction: column;
+  /*se alinean los elementos en columnas*/
 
-    /* centrar el formulario en la página */
-    margin: 0 auto;
-    width: 50%;
+  /* centrar el formulario en la página */
+  margin: 0 auto;
+  width: 50%;
 
-    /* diseños en el formulario, borde que aparece a su alrededor y con color */
-    padding: 1em;
-    border: 1px solid #645050;
-    border-radius: 1em;
-    
+  /* diseños en el formulario, borde que aparece a su alrededor y con color */
+  padding: 1em;
+  border: 1px solid #645050;
+  border-radius: 1em;
 }
 
 label {
-    /* tamaño y alineación uniforme */
-    margin-bottom: 5px;
-    width: 90px;
+  /* tamaño y alineación uniforme */
+  margin-bottom: 5px;
+  width: 90px;
 }
 
 /* aplicamos estilos a 2 etiquetas a la vez*/
-input, textarea {
-    /* establecemos el tipo de letra que van a tener los input y el textarea */
-    font: 1em sans-serif;
+input,
+textarea {
+  /* establecemos el tipo de letra que van a tener los input y el textarea */
+  font: 1em sans-serif;
 
-    /* tamaño del campo de texto */
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+  /* tamaño del campo de texto */
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
 }
-
 
 /* ----ESTILOS DE LA PAGINA OPINIONES ---- */
 .figureOpiniones {
-    display: flex; /*elemento flexible, al igual q sus hijos*/
-    
-    /* controles de los figure, para que esten separados uno del otro, para q tengan margen del borde asi queda
+  display: flex;
+  /*elemento flexible, al igual q sus hijos*/
+
+  /* controles de los figure, para que esten separados uno del otro, para q tengan margen del borde asi queda
     mas lindo, le ponemos color al borde para que se diferencie una opinion de la otra */
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-    border: 1px solid #645050;
-    border-radius: 1em;
-    flex: 200px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #645050;
+  border-radius: 1em;
+  flex: 200px;
 }
 
 .imgOpiniones {
-    width: 45%;
-    height: 20%;
-    padding-bottom: 5px;
-    
+  width: 45%;
+  height: 20%;
+  padding-bottom: 5px;
 }
 
-#secOpiniones{
-    display: flex;  /*la seccion va a ser flexible*/
-    flex-direction: row;
+#secOpiniones {
+  display: flex;
+  /*la seccion va a ser flexible*/
+  flex-direction: row;
 }
 
-/* ---- ESTILOS DE LA PAGINA NOSOTROS ----*/
-#secNosotros{
-    display: flex;
-    flex-direction: row;
+/* ---- ESTILOS DE LA PAGINA GALERIA ----*/
+#secAgradecimiento {
+  display: flex;
+  flex-direction: row;
+}
+
+.galeriaFotos {
+  /*colocamos margen del lado izquierdo y derecho asi no queda tan al borde de la pantalla*/
+  margin-left: 50px;
+  margin-right: 50px;
+  /*la galeria se comporta como grid para establecerla como cuadricula*/
+  display: grid;
+  /*establecemos el numero y el tamaño de las columnas, con el auto-fill hacemos q se colocen
+    todas las imagenes posibles a lo ancho de la pantalla, donde las imagenes ocuparan un maximo de
+    250px*/
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /*establecemos el espacio entre las cuadriculas*/
+  gap: 10px;
+  /*colocamos un padding asi el texto no se viene encima de las imagenes*/
+  padding: 10px;
+}
+
+.galeriaFotos img {
+  width: 100%;
+  height: 100%;
 }
 
 /* ---- MEDIA QUERYS ---- */
 
 /* diseño para dispositivos moviles */
 @media screen and (max-width: 480px) {
+  /*en dispositivos celulares el logo de medicina va a desaparecer, dejando solo las opciones del nav */
+  #logoMedicina {
+    display: none;
+  }
 
-    /*en dispositivos celulares el logo de medicina va a desaparecer, dejando solo las opciones del nav */
-    #logoMedicina{ 
-        display: none;
-    }
+  /*en dispositivos celulares el texto de las cards desaparece, en la pagina turnos*/
+  .figTurnos {
+    display: none;
+  }
 
-    /*en dispositivos celulares el texto de las cards desaparece, en la pagina turnos*/
-    .figTurnos{
-        display: none;
-    }
-
-    /*en dispositivos celulares hacemos que las opiniones se muestren una abajo de la otra, pagina opiniones*/
-    #secOpiniones{
-        flex-wrap: wrap; 
-
-    }
-
-   
+  /*en dispositivos celulares hacemos que las opiniones se muestren una abajo de la otra, pagina opiniones*/
+  #secOpiniones {
+    flex-wrap: wrap;
+  }
 }
