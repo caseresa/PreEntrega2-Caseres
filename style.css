@@ -24,26 +24,6 @@ h3 {
   text-align: center;
 }
 
-/*
-ul {
-    /* configuracion para que las opciones esten a la derecha y sin ningun estilo de lista 
-    list-style-type: none;
-    text-align: right;
-}*/
-
-/*
-li {
-    /* configuracion para que las opciones esten al lado de la otra 
-    display: inline;
-    margin-right: 25px;
-}*/
-
-/*
-a{
-    /* mis opciones aparecen en negro
-    color: #000000;
-}*/
-
 section {
   /* todo lo que esté dentro de mi section se centra */
   text-align: center;
@@ -67,14 +47,17 @@ nav button {
   margin: 10px;
   border-radius: 20%;
   background-color: black;
+  transition-duration: 0.4s;  /*tiempo de la transicion del hover*/
 }
 
-a:hover {
-  color: aqua;
+/*los botones del nav cambian de color al pasar el cursor por encima*/
+button:hover {
+  background-color: rgb(88, 81, 81);
+  color: black;
 }
 
-.jumbotron {
-  background-image: url("./img/imagenFondo.png");
+.bienvenida {
+  background-image: url("./img/imagenFondo.png"); /*imagen de fondo*/
   background-size: cover;
   color: black;
   text-align: center;
@@ -167,6 +150,7 @@ textarea {
   border: 1px solid #645050;
   border-radius: 1em;
   flex: 200px;
+  background-color:lightsteelblue;
 }
 
 .imgOpiniones {
