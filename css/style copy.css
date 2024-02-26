@@ -12,13 +12,6 @@ header {
   text-align: center;
 }
 
-h2 {
-  /* alineo mi h2 con las opciones de navegacion */
-  position: absolute;
-  top: -3px;
-  padding-left: 80px;
-  color: black;
-}
 
 h3 {
   text-align: center;
@@ -57,7 +50,7 @@ button:hover {
 }
 
 .bienvenida {
-  background-image: url("./img/imagenFondo.png"); /*imagen de fondo*/
+  background-image: url("../img/imagenFondo.png"); /*imagen de fondo*/
   background-size: cover;
   color: black;
   text-align: center;
@@ -159,14 +152,14 @@ textarea {
   padding-bottom: 5px;
 }
 
-#secOpiniones {
+.secOpiniones {
   display: flex;
   /*la seccion va a ser flexible*/
   flex-direction: row;
 }
 
 /* ---- ESTILOS DE LA PAGINA GALERIA ----*/
-#secAgradecimiento {
+.secAgradecimiento {
   display: flex;
   flex-direction: row;
 }

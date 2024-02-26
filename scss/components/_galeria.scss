@@ -1,0 +1,20 @@
+.galeriaFotos {
+    /*colocamos margen del lado izquierdo y derecho asi no queda tan al borde de la pantalla*/
+    margin-left: 50px;
+    margin-right: 50px;
+    /*la galeria se comporta como grid para establecerla como cuadricula*/
+    display: grid;
+    /*establecemos el numero y el tamaño de las columnas, con el auto-fill hacemos q se colocen
+      todas las imagenes posibles a lo ancho de la pantalla, donde las imagenes ocuparan un maximo de
+      250px*/
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /*establecemos el espacio entre las cuadriculas*/
+    gap: 10px;
+    /*colocamos un padding asi el texto no se viene encima de las imagenes*/
+    padding: 10px;
+
+    img {   /*imagenes de la galeria*/
+        width: 100%;
+        height: 100%;
+    }
+  }

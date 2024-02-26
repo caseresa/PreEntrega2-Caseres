@@ -5,56 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar justify-content-center">
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-heart-pulse-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9z" />
+                    <path
+                        d="M.88 8C-2.427 1.68 4.41-2 7.823 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8z" />
+                </svg>
+                <span class="fs-4">MediPLUS</span>
+            </a>
 
-            <ul class="nav">
-                <button>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./turnos.html">TURNOS</a>
-                    </li>
-                </button>
-                <button>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./contacto.html">CONTACTO</a>
-                    </li>
-                </button>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">
-                        <img id="logoMedicina" src="../img/logoMedicina.png" />
-                    </a>
-                </li>
-
-                <button>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./opiniones.html">OPINIONES</a>
-                    </li>
-                </button>
-                <button>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./galeria.html">GALERIA</a>
-                    </li>
-                </button>
-
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../index.html" class="nav-link" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="./turnos.html" class="nav-link active">Turnos</a></li>
+                <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="./opiniones.html" class="nav-link">Opiniones</a></li>
+                <li class="nav-item"><a href="./galeria.html" class="nav-link">Galeria</a></li>
             </ul>
-        </nav>
-    
-    </header>
+        </header>
+    </div>
 
     <h3>TURNOS EN EL MOMENTO</h3><br>
     <section class="secTurnos">
-        
+
 
         <figure class="figureTurnos">
             <p>CARDIOLOGIA</p>
-            <img src="../img/turno.png" class="imgTurnos"><br>
+            <img src="../img/especialidades/cardiologia.jpg" class="imgTurnos"><br>
             <figcaption class="figTurnos">
                 ¡Contamos con los mejores cardiologos del pais!
             </figcaption><br>
@@ -63,7 +49,7 @@
 
         <figure class="figureTurnos">
             <p>NEUROLOGIA</p>
-            <img src="../img/turno.png" class="imgTurnos"><br>
+            <img src="../img/especialidades/neurologia.jpg" class="imgTurnos"><br>
             <figcaption class="figTurnos">
                 ¡Contamos con los mejores neorólogos del pais!
             </figcaption><br>
@@ -73,7 +59,7 @@
 
         <figure class="figureTurnos">
             <p>PEDIATRÍA</p>
-            <img src="../img/turno.png" class="imgTurnos"><br>
+            <img src="../img/especialidades/pediatria.jpg" class="imgTurnos"><br>
             <figcaption class="figTurnos">
                 ¡Contamos con los mejores pediatras del pais!
             </figcaption><br>
@@ -83,9 +69,19 @@
 
         <figure class="figureTurnos">
             <p>DERMATOLOGÍA</p>
-            <img src="../img/turno.png" class="imgTurnos"><br>
+            <img src="../img/especialidades/dermatologia.jpg" class="imgTurnos"><br>
             <figcaption class="figTurnos">
                 ¡Contamos con los mejores dermatólogos del pais!
+            </figcaption><br>
+            <button type="button" class="btn btn-info">SACAR TURNO</button>
+
+        </figure>
+
+        <figure class="figureTurnos">
+            <p>CIRUGÍA PLÁSTICA</p>
+            <img src="../img/especialidades/plastica.jpg" class="imgTurnos"><br>
+            <figcaption class="figTurnos">
+                ¡Contamos con los mejores cirujanos plásticos del país!
             </figcaption><br>
             <button type="button" class="btn btn-info">SACAR TURNO</button>
 
@@ -94,7 +90,7 @@
     </section>
 
     <footer>
-        Derechos Reservados 2024
+        © Copyright MediPLUS. All Rights Reserved
     </footer>
 
 

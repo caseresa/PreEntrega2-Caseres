@@ -1,0 +1,57 @@
+.sidebar {
+    background-color: lightgray;
+    padding: 50px;
+    width: 400px;
+    float: right;
+    text-align: center;
+    border-radius: 5px;
+
+    svg{
+        width: 40px; height: 40px;
+        fill: black;
+        margin: 10px;
+    }
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+
+}
+
+form {
+    display: flex;
+    /*el form es flexible al igual q sus hijos*/
+    flex-direction: column;
+    /*se alinean los elementos en columnas*/
+  
+    /* centrar el formulario en la página */
+    margin: 0 auto;
+    width: 50%;
+  
+    /* diseños en el formulario, borde que aparece a su alrededor y con color */
+    padding: 1em;
+    border: 1px solid #645050;
+    border-radius: 1em;
+
+    justify-content: center;
+
+    label {
+        /* tamaño y alineación uniforme */
+        margin-bottom: 5px;
+        width: 90px;
+      }
+      
+      /* aplicamos estilos a 2 etiquetas a la vez*/
+    input,
+    textarea {
+        /* establecemos el tipo de letra que van a tener los input y el textarea */
+        font: 1em sans-serif;
+      
+        /* tamaño del campo de texto */
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        flex-direction: row;
+      }
+}
+

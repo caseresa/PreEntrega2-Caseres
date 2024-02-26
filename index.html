@@ -4,93 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Principal</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MediPLUS</title>
+    <link rel="icon" href="http://www.w3.org/2000/svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <header>
-        <nav class="navbar justify-content-center">
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-heart-pulse-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9z" />
+                    <path
+                        d="M.88 8C-2.427 1.68 4.41-2 7.823 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8z" />
+                </svg>
+                <span class="fs-4">MediPLUS</span>
+            </a>
 
-            <ul class="nav">
-                <button>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/turnos.html">TURNOS</a>
-                    </li>
-                </button>
-                <button>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/contacto.html">CONTACTO</a>
-                    </li>
-                </button>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img id="logoMedicina" src="./img/logoMedicina.png" />
-                    </a>
-                </li>
-
-                <button>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/opiniones.html">OPINIONES</a>
-                    </li>
-                </button>
-                <button>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./pages/galeria.html">GALERIA</a>
-                    </li>
-                </button>
-
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="./pages/turnos.html" class="nav-link">Turnos</a></li>
+                <li class="nav-item"><a href="./pages/contacto.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="./pages/opiniones.html" class="nav-link">Opiniones</a></li>
+                <li class="nav-item"><a href="./pages/galeria.html" class="nav-link">Galeria</a></li>
             </ul>
-        </nav>
-    </header>
-
+        </header>
+    </div>
 
     <div class="container-fluid">
         <div class="bienvenida">
             <h1 class="display-4">¡Bienvenido a nuestra clínica!</h1>
             <p class="lead">Ofrecemos servicios médicos de alta calidad para cuidar tu salud.</p>
         </div>
+    </div><br>
 
-        <div class="row" >
-            <div class="col-md-4">
-                <img src="./img/pagPrincipal1.jpg" class="img-fluid" alt="Imagen 1" style="width: 80%; height: auto; border-radius: 50%;">
+    <h3>Nuestro personal</h3>
+    <div class="container mt-5 " data-aos="fade-down">
+        <div class="card-deck">
+            <div class="card" >
+                <img class="card-img-top" src="./img/equipo/equipo1.jpg" alt="Foto del Doctor">
+                <div class="card-body">
+                    <h5 class="card-title">Dr. Juan Pérez</h5>
+                    <p class="card-text">Especialidad: Medicina Interna</p>
+                    <p class="card-text">Experiencia: 15 años</p>
+                    <a class="btn btn-primary">Ver Perfil</a>
+                </div>
             </div>
-            <div class="col-md-4">
-                <img src="./img/pagPrincipal2.jpg" class="img-fluid" alt="Imagen 2" style="width: 80%; height: auto; border-radius: 50%;">
+
+            <div class="card">
+                <img class="card-img-top" src="./img/equipo/equipo2.jpg" alt="Foto del Doctor">
+                <div class="card-body">
+                    <h5 class="card-title">Dra. María Gutiérrez</h5>
+                    <p class="card-text">Especialidad: Pediatría</p>
+                    <p class="card-text">Experiencia: 10 años</p>
+                    <a class="btn btn-primary">Ver Perfil</a>
+                </div>
             </div>
-            <div class="col-md-4">
-                <img src="./img/pagPrincipal3.jpg" class="img-fluid" alt="Imagen 3" style="width: 100%; height: auto; border-radius: 50%;">
+
+            <div class="card">
+                <img class="card-img-top" src="./img/equipo/equipo3.jpg" alt="Foto del Doctor">
+                <div class="card-body">
+                    <h5 class="card-title">Dr. Mario López</h5>
+                    <p class="card-text">Especialidad: Cirugía Ortopédica</p>
+                    <p class="card-text">Experiencia: 20 años</p>
+                    <a class="btn btn-primary">Ver Perfil</a>
+                </div>
             </div>
         </div>
-    </div><br><br><br><br>
-
-
+    </div><br>
 
     <section>
         <p class="lead">
-            Bienvenido a nuestra página dedicada a la salud y el bienestar, donde conectamos a pacientes con
+            Nuestra página está dedicada a la salud y el bienestar, donde conectamos a pacientes con
             profesionales médicos de confianza. Descubre un espacio diseñado para facilitar la búsqueda de
             especialistas, agendar citas de manera sencilla y brindar información valiosa para tu cuidado. Tu salud,
             nuestra prioridad.
         </p>
     </section>
 
-    <footer>
-        Derechos Reservados 2024
-    </footer>
 
+    <footer>
+        © Copyright MediPLUS. All Rights Reserved
+    </footer>
 
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-<!-- Bootstrap JS (opcional, solo si necesitas funcionalidades de Bootstrap que requieran JavaScript) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </html>

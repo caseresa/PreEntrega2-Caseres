@@ -1,0 +1,209 @@
+@charset "UTF-8";
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+body h3, body section {
+  text-align: center;
+}
+body img {
+  width: 50%;
+}
+body .bienvenida {
+  background-image: url("../../img/imagenFondo.png"); /*imagen de fondo*/
+  background-size: cover;
+  color: black;
+  text-align: center;
+  padding: 150px 0;
+  margin-bottom: 50px;
+}
+body .pagPrincipal {
+  width: 100%;
+  height: 400px;
+  border-radius: 50%;
+}
+body .card-group {
+  margin: 20px;
+}
+body .card-group .card {
+  width: 18rem;
+}
+
+.container svg {
+  width: 40px;
+  height: 40px;
+}
+.container li:hover {
+  transition-duration: 0.7s;
+  background-color: rgb(177, 185, 209);
+}
+
+/*header{
+    /* aplica borde a mi header con margen 
+    margin: 5px;
+    text-align: center;
+
+    nav button{
+        margin: 10px;
+        border-radius: 20%;
+        background-color: black;
+        transition-duration: 0.4s;  /*tiempo de la transicion del hover
+
+        &:hover{
+            background-color: rgb(88, 81, 81);
+            color: black;
+        }
+    }
+
+    #logoMedicina{
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+    }
+}*/
+footer {
+  /* con esta configuracion ponemos el footer al pie de la pagina */
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: darkblue;
+  font-weight: bold;
+  padding-top: 15px;
+  margin-top: 30px;
+}
+
+/*esta seccion esta en la pagina turnos, controla las cards*/
+.secTurnos {
+  display: flex; /*elementos flexibles, en este caso las cards*/
+  flex-direction: row; /*se van a alinear en filas*/
+  justify-content: center; /*el contenido va a estar en el centro*/
+  flex-wrap: wrap; /*wrap para que si se pasan de la pagina, las cards hagan salto de linea*/
+}
+.secTurnos .figureTurnos {
+  /* configuracion para que los figure esten uno al lado del otro, con color de fondo, bordes, texto alineado,
+    un margen, etc. */
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  text-align: center;
+  width: 400px;
+}
+.secTurnos img {
+  width: 70%;
+  height: 300px;
+}
+
+/*esta seccion esta en la pagina opiniones*/
+.secOpiniones {
+  display: flex; /*la seccion va a ser flexible*/
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.secOpiniones .figureOpiniones {
+  display: flex;
+  /* controles de los figure, para que esten separados uno del otro, para q tengan margen del borde asi queda
+    mas lindo, le ponemos color al borde para que se diferencie una opinion de la otra */
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #645050;
+  border-radius: 1em;
+  flex: 300px;
+  background-color: rgb(198, 213, 231);
+}
+.secOpiniones img {
+  width: 100px;
+  height: 30%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 480px) {
+  .secOpiniones img {
+    display: none;
+  }
+}
+
+/*esta seccion esta en la pagina galeria*/
+.secAgradecimiento {
+  display: flex;
+  flex-direction: row;
+}
+
+.galeriaFotos {
+  /*colocamos margen del lado izquierdo y derecho asi no queda tan al borde de la pantalla*/
+  margin-left: 50px;
+  margin-right: 50px;
+  /*la galeria se comporta como grid para establecerla como cuadricula*/
+  display: grid;
+  /*establecemos el numero y el tamaño de las columnas, con el auto-fill hacemos q se colocen
+    todas las imagenes posibles a lo ancho de la pantalla, donde las imagenes ocuparan un maximo de
+    250px*/
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /*establecemos el espacio entre las cuadriculas*/
+  gap: 10px;
+  /*colocamos un padding asi el texto no se viene encima de las imagenes*/
+  padding: 10px;
+}
+.galeriaFotos img { /*imagenes de la galeria*/
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  background-color: lightgray;
+  padding: 50px;
+  width: 400px;
+  float: right;
+  text-align: center;
+  border-radius: 5px;
+}
+.sidebar svg {
+  width: 40px;
+  height: 40px;
+  fill: black;
+  margin: 10px;
+}
+@media screen and (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+form {
+  display: flex;
+  /*el form es flexible al igual q sus hijos*/
+  flex-direction: column;
+  /*se alinean los elementos en columnas*/
+  /* centrar el formulario en la página */
+  margin: 0 auto;
+  width: 50%;
+  /* diseños en el formulario, borde que aparece a su alrededor y con color */
+  padding: 1em;
+  border: 1px solid #645050;
+  border-radius: 1em;
+  justify-content: center;
+  /* aplicamos estilos a 2 etiquetas a la vez*/
+}
+form label {
+  /* tamaño y alineación uniforme */
+  margin-bottom: 5px;
+  width: 90px;
+}
+form input,
+form textarea {
+  /* establecemos el tipo de letra que van a tener los input y el textarea */
+  font: 1em sans-serif;
+  /* tamaño del campo de texto */
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+/*# sourceMappingURL=style.css.map */

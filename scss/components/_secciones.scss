@@ -1,0 +1,66 @@
+/*esta seccion esta en la pagina turnos, controla las cards*/
+.secTurnos {
+    display: flex;     /*elementos flexibles, en este caso las cards*/
+    flex-direction: row;     /*se van a alinear en filas*/
+    justify-content: center;     /*el contenido va a estar en el centro*/
+    flex-wrap: wrap;     /*wrap para que si se pasan de la pagina, las cards hagan salto de linea*/
+
+    .figureTurnos {
+        /* configuracion para que los figure esten uno al lado del otro, con color de fondo, bordes, texto alineado,
+          un margen, etc. */
+        display: inline-block;
+        margin: 10px;
+        border: 1px solid #ccc;
+        padding: 5px;
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        text-align: center;
+        width: 400px;
+    }
+
+    img{
+        width: 70%;
+        height: 300px;
+
+    }
+}
+
+/*esta seccion esta en la pagina opiniones*/
+.secOpiniones {
+    display: flex; /*la seccion va a ser flexible*/
+    flex-direction: row; 
+    justify-content: center;
+    flex-wrap: wrap; 
+
+    .figureOpiniones {
+        display: flex;
+    
+        /* controles de los figure, para que esten separados uno del otro, para q tengan margen del borde asi queda
+          mas lindo, le ponemos color al borde para que se diferencie una opinion de la otra */
+        margin: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
+        border: 1px solid #645050;
+        border-radius: 1em;
+        flex: 300px;
+        background-color:rgb(198, 213, 231);
+    }
+
+    img{
+        width: 100px;
+        height: 30%;
+        border-radius: 50%;
+
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+    }
+
+}
+
+/*esta seccion esta en la pagina galeria*/
+.secAgradecimiento {
+    display: flex;
+    flex-direction: row;
+}
