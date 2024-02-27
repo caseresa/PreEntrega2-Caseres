@@ -12,7 +12,7 @@ body img {
   width: 50%;
 }
 body .bienvenida {
-  background-image: url("../../img/imagenFondo.png");
+  background-image: url("../img/imagenFondo.png");
   /*imagen de fondo*/
   background-size: cover;
   color: black;
