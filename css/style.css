@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   text-align: center;
   overflow-x: hidden;
 }
@@ -30,39 +30,6 @@ body .card-group {
 }
 body .card-group .card {
   width: 18rem;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.text {
-  opacity: 0;
-  animation: changeText 10s infinite;
-}
-
-@keyframes changeText {
-  0%, 25% {
-    opacity: 0;
-  }
-  30%, 70% {
-    opacity: 1;
-  }
-  75%, 100% {
-    opacity: 0;
-  }
-}
-.text:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.text:nth-child(2) {
-  animation-delay: 5s;
-}
-
-.text:nth-child(3) {
-  animation-delay: 10s;
 }
 
 .container svg {
@@ -189,7 +156,7 @@ footer svg {
   left: 0;
   padding-left: 0px;
   /*animation*/
-  animation: move 10s;
+  animation: move 12s;
   animation-iteration-count: infinite;
   animation-delay: 3s;
 }
