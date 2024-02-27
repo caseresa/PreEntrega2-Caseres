@@ -12,6 +12,12 @@
         margin: 10px;
     }
 
+    iframe{
+        width: 350px;
+        height: 200px;
+        border: 0;
+    }
+
     @media screen and (max-width: 480px) {
         display: none;
     }

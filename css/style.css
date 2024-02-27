@@ -2,15 +2,18 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
+  overflow-x: hidden;
 }
-body h3, body section {
+body h3,
+body section {
   text-align: center;
 }
 body img {
   width: 50%;
 }
 body .bienvenida {
-  background-image: url("../../img/imagenFondo.png"); /*imagen de fondo*/
+  background-image: url("../../img/imagenFondo.png");
+  /*imagen de fondo*/
   background-size: cover;
   color: black;
   text-align: center;
@@ -29,6 +32,39 @@ body .card-group .card {
   width: 18rem;
 }
 
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  opacity: 0;
+  animation: changeText 10s infinite;
+}
+
+@keyframes changeText {
+  0%, 25% {
+    opacity: 0;
+  }
+  30%, 70% {
+    opacity: 1;
+  }
+  75%, 100% {
+    opacity: 0;
+  }
+}
+.text:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.text:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.text:nth-child(3) {
+  animation-delay: 10s;
+}
+
 .container svg {
   width: 40px;
   height: 40px;
@@ -38,40 +74,20 @@ body .card-group .card {
   background-color: rgb(177, 185, 209);
 }
 
-/*header{
-    /* aplica borde a mi header con margen 
-    margin: 5px;
-    text-align: center;
-
-    nav button{
-        margin: 10px;
-        border-radius: 20%;
-        background-color: black;
-        transition-duration: 0.4s;  /*tiempo de la transicion del hover
-
-        &:hover{
-            background-color: rgb(88, 81, 81);
-            color: black;
-        }
-    }
-
-    #logoMedicina{
-        @media screen and (max-width: 480px) {
-            display: none;
-        }
-    }
-}*/
 footer {
   /* con esta configuracion ponemos el footer al pie de la pagina */
   text-align: center;
-  bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 80px;
+  bottom: 0;
   color: white;
   background-color: darkblue;
   font-weight: bold;
   padding-top: 15px;
   margin-top: 30px;
+}
+footer svg {
+  width: 30px;
 }
 
 /*esta seccion esta en la pagina turnos, controla las cards*/
@@ -136,23 +152,63 @@ footer {
 }
 
 .galeriaFotos {
-  /*colocamos margen del lado izquierdo y derecho asi no queda tan al borde de la pantalla*/
-  margin-left: 50px;
-  margin-right: 50px;
-  /*la galeria se comporta como grid para establecerla como cuadricula*/
-  display: grid;
-  /*establecemos el numero y el tamaño de las columnas, con el auto-fill hacemos q se colocen
-    todas las imagenes posibles a lo ancho de la pantalla, donde las imagenes ocuparan un maximo de
-    250px*/
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  /*establecemos el espacio entre las cuadriculas*/
-  gap: 10px;
-  /*colocamos un padding asi el texto no se viene encima de las imagenes*/
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.galeriaFotos img { /*imagenes de la galeria*/
-  width: 100%;
-  height: 100%;
+
+.Iam {
+  padding: 2em 5em;
+  font: normal 40px/50px geologica, sans-serif;
+  color: #999;
+  padding-right: 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.Iam p {
+  height: 50px;
+  float: left;
+  position: relative;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  padding-left: 40px;
+  text-align: left;
+}
+.Iam .innerIam {
+  display: inline-block;
+  color: #33407a;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  padding-left: 0px;
+  /*animation*/
+  animation: move 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
 }
 
 .sidebar {
@@ -168,6 +224,11 @@ footer {
   height: 40px;
   fill: black;
   margin: 10px;
+}
+.sidebar iframe {
+  width: 350px;
+  height: 200px;
+  border: 0;
 }
 @media screen and (max-width: 480px) {
   .sidebar {
